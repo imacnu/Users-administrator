@@ -1,0 +1,41 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <p class="alert alert-danger">El formulario contiene <%= pluralize(@user.errors.count, "error") %> </p>
+      <ul>
+        <% @user.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Nombre %><br>
+    <%= f.text_field :name, class:"form-control" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :mail %><br>
+    <%= f.text_field :mail, class:"form-control" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Desempleado%>
+    <%= f.check_box :professional %>
+  </div>
+
+  <div class="field">
+    <%= f.label :"Foto de Pefil" %>
+    <span class="btn btn-inverse btn-file">
+      <i class ="glyphicon glyphicon-plus plus"></i>
+      <%= f.file_field :photo%>
+    </span>
+  </div>
+  
+  <div class="actions">
+    
+    <%= link_to 'Volver', users_path, class:"btn btn-info" %>
+    <%= f.submit "Guardar", class:"btn btn-primary" %>
+  </div>
+<% end %>

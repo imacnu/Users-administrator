@@ -1,0 +1,111 @@
+@import url(bootstrap.css);
+@import url(flat-ui.css);
+/* This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+/* line 22, ../stylesheets/application.sass */
+.wrapper {
+  text-align: center;
+  margin-bottom: 5%; }
+
+/* line 26, ../stylesheets/application.sass */
+.container {
+  font-family: Helvetica neue, Helvetica, sans-serif;
+  font-weight: 300; }
+
+/* line 30, ../stylesheets/application.sass */
+h1 {
+  font-size: 5rem;
+  font-family: Helvetica neue, Helvetica, sans-serif neue;
+  font-weight: 100;
+  border: 1px solid;
+  padding: 2%; }
+
+/* line 37, ../stylesheets/application.sass */
+th {
+  font-family: Helvetica neue, Helvetica, sans-serif;
+  font-weight: 700; }
+
+/* line 42, ../stylesheets/application.sass */
+.btn {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  padding: 1% 4%;
+  margin: 2% 0 2% 0; }
+
+/* line 48, ../stylesheets/application.sass */
+.btn-file {
+  position: relative;
+  overflow: hidden;
+  padding: 0%;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  height: 50px;
+  width: 50px; }
+  /* line 56, ../stylesheets/application.sass */
+  .btn-file input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block; }
+
+/* line 71, ../stylesheets/application.sass */
+.plus {
+  font-size: 4rem; }
+
+/* line 74, ../stylesheets/application.sass */
+label {
+  font-family: Helvetica neue, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  margin-right: 20px; }
+
+/* line 80, ../stylesheets/application.sass */
+.profile_section {
+  margin: 10% auto;
+  padding: 10%; }
+
+/* line 85, ../stylesheets/application.sass */
+.profile_detail {
+  list-style-type: none; }
+  /* line 87, ../stylesheets/application.sass */
+  .profile_detail li {
+    padding: 1%; }
+
+/* line 89, ../stylesheets/application.sass */
+.profile_title {
+  text-align: center;
+  margin-bottom: 3%;
+  margin-top: -5%; }
+  /* line 93, ../stylesheets/application.sass */
+  .profile_title h2 {
+    font-family: Helvetica neue, Helvetica, sans-serif;
+    font-weight: 700; }
+
+/* line 96, ../stylesheets/application.sass */
+.profile_picture {
+  border: 3px solid #27b08a;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  width: 200px;
+  height: 200px; }

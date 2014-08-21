@@ -1,0 +1,44 @@
+<!-- <p id="notice"><%= notice %></p> -->
+
+<section class="profile_section col-xs-12 well">
+	<div class="row profile_title">
+		<h2>Detalle del perfil de <%= @user.name %> </h2>
+	</div>
+
+	<article class="col-xs-3 col-xs-offset-3">
+		<img  class="profile_picture" src= <%= @user.photo %> alt="imagen">
+	</article>
+
+	<article class="col-xs-3">
+	<ul class="profile_detail">
+		<li>
+			<strong>Nombre:</strong>
+  			<%= @user.name %>
+		</li>
+		<li>
+			<strong>Mail:</strong>
+ 			<%= @user.mail %>
+		</li>
+		<li>
+			<strong>Desempleado:</strong>
+			 <% if @user.professional %>
+                <%= "Si" %>
+              <% else %>
+               <%= "No" %>
+              <% end %> 
+  			
+		</li>
+		<li>
+			<%= link_to 'Back', users_path,class:"btn btn-info" %>
+			<%= link_to 'Edit', edit_user_path(@user), class:"btn  btn-primary" %> 	
+		</li>
+	</ul>
+		
+	</article>
+</section>
+
+ <div class="row">
+	
+ </div>
+
+

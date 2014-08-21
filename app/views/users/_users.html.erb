@@ -1,0 +1,17 @@
+ <% @users.each do |user| %>
+        <tr>
+          <td><%= link_to user.name , user %></td>
+          <td><%= user.mail %></td>
+          <td>
+              <% if user.professional %>
+                <%= "Si" %>
+              <% else %>
+               <%= "No" %>
+              <% end %> 
+
+          </td>
+      
+          <td><%= link_to 'Editar', edit_user_path(user) %></td>
+          <td><%= link_to 'Eliminar', user, method: :delete, data: { confirm: 'Seguro que desea borrar el registro?' } %></td>
+        </tr>
+      <% end %>

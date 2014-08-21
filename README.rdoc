@@ -1,0 +1,17 @@
+== README
+
+Simple administration app. Users profile with local photos (database public folder)
+
+* Ruby version  2.1
+
+* Rails version 4.1.4
+
+
+
+* Users Database
+    
+    name  
+    mail
+    status
+    photo
+
